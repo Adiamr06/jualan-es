@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             const name = document.getElementById('review-name').value;
+            const nim = document.getElementById('review-nim').value;
+            const className = document.getElementById('review-class').value;
             const rating = document.getElementById('review-rating').value;
             const comment = document.getElementById('review-comment').value;
 
@@ -21,7 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
             reviewCard.className = 'review-card animate-fade';
             reviewCard.innerHTML = `
                 <div class="review-header">
-                    <strong>${name}</strong>
+                    <div>
+                        <strong>${name}</strong>
+                        <div style="font-size: 11px; color: var(--gray-500); margin-top: 2px;">
+                            ${nim} • Kelas ${className}
+                        </div>
+                    </div>
                     <span class="stars">${stars}</span>
                 </div>
                 <p>"${comment}"</p>

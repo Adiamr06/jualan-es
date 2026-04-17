@@ -115,21 +115,36 @@
                 <!-- Pre-filled reviews -->
                 <div class="review-card">
                     <div class="review-header">
-                        <strong>Andi Pratama</strong>
+                        <div>
+                            <strong>Andi Pratama</strong>
+                            <div style="font-size: 11px; color: var(--gray-500); margin-top: 2px;">
+                                202301001 • Kelas 4A
+                            </div>
+                        </div>
                         <span class="stars">★★★★★</span>
                     </div>
                     <p>"Thai Tea paling enak yang pernah saya coba! Creamy banget dan manisnya pas."</p>
                 </div>
                 <div class="review-card">
                     <div class="review-header">
-                        <strong>Andi wijaya</strong>
+                        <div>
+                            <strong>Andi Wijaya</strong>
+                            <div style="font-size: 11px; color: var(--gray-500); margin-top: 2px;">
+                                202301045 • Kelas 4A
+                            </div>
+                        </div>
                         <span class="stars">★★★★☆</span>
                     </div>
                     <p>"Jasmine Green Tea nya seger banget buat siang-siang. Packing rapi dan cepat sampai."</p>
                 </div>
                 <div class="review-card">
                     <div class="review-header">
-                        <strong>Budi Santoso</strong>
+                        <div>
+                            <strong>Budi Santoso</strong>
+                            <div style="font-size: 11px; color: var(--gray-500); margin-top: 2px;">
+                                202301077 • Kelas 4C
+                            </div>
+                        </div>
                         <span class="stars">★★★★★</span>
                     </div>
                     <p>"Varian Taro nya juara. Anak-anak suka banget. Aplikasinya juga gampang banget dipake buat
@@ -141,20 +156,34 @@
             <div class="review-form">
                 <h3>Berikan Ulasan Anda</h3>
                 <form id="review-form" style="margin-top: 20px;">
-                    <div class="form-group">
-                        <label>Nama Lengkap</label>
-                        <input type="text" class="form-control" id="review-name" required
-                            placeholder="Masukkan nama anda">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label>Nama Mahasiswa</label>
+                            <input type="text" class="form-control" id="review-name" required
+                                placeholder="Masukkan nama anda">
+                        </div>
+                        <div class="form-group">
+                            <label>NIM Mahasiswa</label>
+                            <input type="text" class="form-control" id="review-nim" required
+                                placeholder="Masukkan NIM anda">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label>Rating</label>
-                        <select class="form-control" id="review-rating">
-                            <option value="5">★★★★★ - Sangat Puas</option>
-                            <option value="4">★★★★☆ - Puas</option>
-                            <option value="3">★★★☆☆ - Cukup</option>
-                            <option value="2">★★☆☆☆ - Kurang</option>
-                            <option value="1">★☆☆☆☆ - Buruk</option>
-                        </select>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label>Kelas</label>
+                            <input type="text" class="form-control" id="review-class" required
+                                placeholder="Contoh: 4A / TI-1">
+                        </div>
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <select class="form-control" id="review-rating">
+                                <option value="5">★★★★★ - Sangat Puas</option>
+                                <option value="4">★★★★☆ - Puas</option>
+                                <option value="3">★★★☆☆ - Cukup</option>
+                                <option value="2">★★☆☆☆ - Kurang</option>
+                                <option value="1">★☆☆☆☆ - Buruk</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Komentar</label>
