@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Fresh | Sensasi Kesegaran Teh Asli 5 Varian Rasa</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Tea Fresh menawarkan 5 varian rasa teh premium: Jasmine, Thai Tea, Peach, Lychee, dan Taro. Segar, nikmat, dan siap temani hari Anda.">
+    <meta name="keywords" content="teh segar, tea fresh, thai tea, jasmine tea, peach tea, minuman segar, boba taro">
+    <meta name="author" content="Tea Fresh Dev Team">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon (Optional) -->
+    <link rel="icon" type="image/png" href="assets/img/jasmine.png">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="main-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">TEA FRESH</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Menu</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="history-icon" id="history-toggle" title="Riwayat Pesanan">
+                    📜
+                </div>
+                <div class="cart-icon" id="cart-toggle" title="Keranjang">
+                    🛒 <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content animate-fade">
+                <span class="section-tag" style="color: white;">Premium Tea Blend</span>
+                <h1>Kesegaran Nyata di Setiap Tegukan</h1>
+                <p>Nikmati perpaduan teh pilihan dengan bahan-bahan alami premium yang diracik khusus untuk memberikan
+                    kesegaran maksimal.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Pesan Sekarang</a>
+                    <a href="#about" class="btn btn-outline" style="border-color: white; color: white;">Pelajari Lebih
+                        Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="section-tag">Our Signature Menu</span>
+                <h2 class="section-title">Pilih Varian Favoritmu</h2>
+            </div>
+
+            <div class="products-grid" id="product-list">
+                <!-- Products will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="background: var(--gray-100);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div>
+                    <img src="assets/img/hero.png" style="border-radius: var(--radius-lg); box-shadow: var(--shadow);"
+                        alt="Tea Fresh Quality">
+                </div>
+                <div>
+                    <span class="section-tag">Mengapa Tea Fresh?</span>
+                    <h2 class="section-title">Kualitas Adalah Prioritas Kami</h2>
+                    <p>Kami hanya menggunakan daun teh pilihan dari perkebunan terbaik di Asia. Setiap gelas Tea Fresh
+                        dibuat dengan standar kebersihan tinggi dan tanpa bahan pengawet.</p>
+                    <ul style="margin-top: 24px; list-style: none;">
+                        <li style="margin-bottom: 12px;">✅ 100% Daun Teh Alami</li>
+                        <li style="margin-bottom: 12px;">✅ Gula Murni (Tanpa Pemanis Buatan)</li>
+                        <li style="margin-bottom: 12px;">✅ Susu Segar Berkualitas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="section-tag">Customer Feedback</span>
+                <h2 class="section-title">Apa Kata Mereka?</h2>
+            </div>
+
+            <div class="reviews-grid" id="reviews-container">
+                <!-- Pre-filled reviews -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <strong>Andi Pratama</strong>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"Thai Tea paling enak yang pernah saya coba! Creamy banget dan manisnya pas."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <strong>Andi wijaya</strong>
+                        <span class="stars">★★★★☆</span>
+                    </div>
+                    <p>"Jasmine Green Tea nya seger banget buat siang-siang. Packing rapi dan cepat sampai."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <strong>Budi Santoso</strong>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"Varian Taro nya juara. Anak-anak suka banget. Aplikasinya juga gampang banget dipake buat
+                        pesen."</p>
+                </div>
+            </div>
+
+            <!-- Review Form -->
+            <div class="review-form">
+                <h3>Berikan Ulasan Anda</h3>
+                <form id="review-form" style="margin-top: 20px;">
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" class="form-control" id="review-name" required
+                            placeholder="Masukkan nama anda">
+                    </div>
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <select class="form-control" id="review-rating">
+                            <option value="5">★★★★★ - Sangat Puas</option>
+                            <option value="4">★★★★☆ - Puas</option>
+                            <option value="3">★★★☆☆ - Cukup</option>
+                            <option value="2">★★☆☆☆ - Kurang</option>
+                            <option value="1">★☆☆☆☆ - Buruk</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Komentar</label>
+                        <textarea class="form-control" id="review-comment" rows="4" required
+                            placeholder="Ceritakan pengalaman anda"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Ulasan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">TEA FRESH</div>
+                    <p style="color: var(--gray-400); max-width: 300px;">Menyediakan kesegaran teh terbaik sejak 2026.
+                        Kepuasan anda adalah semangat kami.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#products">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><a href="#">support@teafresh.com</a></li>
+                        <li><a href="#">+62 878 0566 3533</a></li>
+                        <li><a href="#">Tangerang, Indonesia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; text-align: center; color: var(--gray-400); font-size: 14px;">
+                &copy; 2024 Tea Fresh. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <div class="close-cart" id="close-cart">&times;</div>
+        </div>
+        <div id="cart-items" style="max-height: 60vh; overflow-y: auto; margin-bottom: 20px;">
+            <!-- Cart items will be injected here -->
+        </div>
+        <div style="border-top: 1px solid var(--gray-200); padding-top: 20px;">
+            <div
+                style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: 700; font-size: 18px;">
+                <span>Total:</span>
+                <span id="cart-total">Rp 0</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" id="checkout-btn">Checkout Sekarang</button>
+        </div>
+    </div>
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-content">
+            <div class="modal-close" id="close-checkout">&times;</div>
+            <h2 style="margin-bottom: 24px;">Pilih Metode Pembayaran</h2>
+
+            <div
+                style="background: var(--gray-100); padding: 20px; border-radius: var(--radius-md); margin-bottom: 30px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Total Pembayaran:</span>
+                    <strong id="modal-total" style="color: var(--primary); font-size: 20px;">Rp 0</strong>
+                </div>
+            </div>
+
+            <div class="payment-grid">
+                <div class="payment-item active" data-method="qris">
+                    <span>QRIS</span>
+                </div>
+                <div class="payment-item" data-method="tf">
+                    <span>Transfer Bank</span>
+                </div>
+                <div class="payment-item" data-method="dana">
+                    <span>DANA</span>
+                </div>
+                <div class="payment-item" data-method="ovo">
+                    <span>OVO</span>
+                </div>
+            </div>
+
+            <!-- Payment Details (Dynamic) -->
+            <div id="payment-details" style="margin-top: 30px; text-align: center;">
+                <div id="qris-view">
+                    <p style="margin-bottom: 15px;">Silakan scan QRIS di bawah ini:</p>
+                    <div
+                        style="width: 200px; height: 200px; background: #eee; margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 2px dashed #ccc;">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=TeaFreshPayment"
+                            alt="QRIS Placeholder">
+                    </div>
+                    <p style="font-size: 12px; margin-top: 10px; color: var(--gray-800);">Berlaku untuk semua Bank,
+                        Dana, Ovo, LinkAja, dll.</p>
+                </div>
+
+                <div id="tf-view" style="display: none;">
+                    <p>Transfer ke Rekening Berikut:</p>
+                    <div
+                        style="text-align: left; background: var(--gray-100); padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        <strong>Bank BCA</strong><br>
+                        No Rek: 8670584748<br>
+                        A/N: Kusnadi Amirudin
+                    </div>
+                </div>
+
+                <div id="ewallet-view" style="display: none;">
+                    <p>Konfirmasi Pembayaran via Aplikasi:</p>
+                    <div style="background: var(--gray-100); padding: 15px; border-radius: 8px; margin-top: 10px;">
+                        No HP: 087805663533<br>
+                        A/N: Kusnadi Amirudin
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%; margin-top: 30px;" onclick="confirmPayment()">Saya Sudah
+                Bayar</button>
+        </div>
+    </div>
+
+    <!-- History Sidebar -->
+    <div class="cart-sidebar" id="history-sidebar">
+        <div class="cart-header">
+            <h3>Riwayat Pesanan</h3>
+            <div class="close-cart" id="close-history">&times;</div>
+        </div>
+        <div class="history-tabs" style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <button class="tab-btn active" data-tab="active">Aktif</button>
+            <button class="tab-btn" data-tab="completed">Selesai</button>
+        </div>
+        <div id="history-items" style="height: calc(100vh - 200px); overflow-y: auto;">
+            <!-- History items will be injected here -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+
+</html>
